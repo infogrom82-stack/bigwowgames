@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Big Wow Games</title>
+<meta name="description" content="Big Wow Games is an independent studio making bright, fast and fun games on Roblox. Our first game: Super Tornado: Storm Chasers.">
+<meta property="og:title" content="Big Wow Games">
+<meta property="og:description" content="Bright, fast and fun Roblox games.">
+<meta property="og:image" content="img/super-tornado.jpg">
+<link rel="icon" href="img/super-tornado-icon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #12101f;
+    --panel: #1d1a33;
+    --text: #f5f3ff;
+    --muted: #b8b2d9;
+    --pink: #ff4fa3;
+    --yellow: #ffd23f;
+    --cyan: #3fd8ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.6 Inter, system-ui, sans-serif;
+  }
+  a { color: var(--cyan); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+  header {
+    padding: 22px 0;
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  }
+  .logo {
+    font: 700 26px/1 Fredoka, sans-serif;
+    letter-spacing: .5px;
+    text-decoration: none; color: var(--text);
+  }
+  .logo span { color: var(--yellow); }
+  nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-weight: 600; }
+  nav a:hover { color: var(--text); }
+  .hero {
+    padding: 64px 0 56px;
+    background:
+      radial-gradient(600px 300px at 15% 20%, rgba(255,79,163,.25), transparent 70%),
+      radial-gradient(600px 300px at 85% 30%, rgba(63,216,255,.22), transparent 70%);
+  }
+  h1 {
+    font: 700 clamp(40px, 7vw, 72px)/1.05 Fredoka, sans-serif;
+    margin: 0 0 18px;
+  }
+  h1 .wow { color: var(--yellow); }
+  .lead { font-size: 20px; color: var(--muted); max-width: 640px; margin: 0; }
+  h2 { font: 700 34px/1.2 Fredoka, sans-serif; margin: 0 0 22px; }
+  section { padding: 48px 0; }
+  .game {
+    display: grid; grid-template-columns: 1.3fr 1fr; gap: 28px; align-items: center;
+    background: var(--panel); border-radius: 24px; padding: 22px;
+    box-shadow: 0 20px 60px rgba(0,0,0,.35);
+  }
+  .game img.shot { width: 100%; border-radius: 16px; display: block; }
+  .game h3 { font: 700 30px/1.15 Fredoka, sans-serif; margin: 0 0 10px; display: flex; align-items: center; gap: 12px; }
+  .game h3 img { width: 54px; height: 54px; border-radius: 14px; }
+  .game p { color: var(--muted); margin: 0 0 18px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+  .tags span { background: rgba(255,255,255,.08); border-radius: 999px; padding: 4px 12px; font-size: 14px; }
+  .btn {
+    display: inline-block; text-decoration: none; font-weight: 700;
+    background: var(--pink); color: #fff; padding: 12px 22px; border-radius: 14px;
+    margin: 0 10px 10px 0;
+  }
+  .btn.alt { background: transparent; border: 2px solid rgba(255,255,255,.25); color: var(--text); }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+  .card { background: var(--panel); border-radius: 20px; padding: 22px; }
+  .card b { display: block; font: 700 22px/1.2 Fredoka, sans-serif; margin-bottom: 6px; }
+  .card p { color: var(--muted); margin: 0; }
+  .soon { border: 2px dashed rgba(255,255,255,.18); background: transparent; }
+  footer { padding: 36px 0 48px; color: var(--muted); font-size: 14px; border-top: 1px solid rgba(255,255,255,.08); }
+  footer a { color: var(--muted); margin-right: 16px; }
+  @media (max-width: 760px) {
+    .game { grid-template-columns: 1fr; }
+    .cards { grid-template-columns: 1fr; }
+    nav a { margin-left: 12px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="./">Big <span>Wow</span> Games</a>
+      <nav>
+        <a href="#games">Games</a>
+        <a href="#follow">Follow</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+  </div>
+
+  <div class="hero">
+    <div class="wrap">
+      <h1>Games that make you say <span class="wow">WOW</span></h1>
+      <p class="lead">Big Wow Games is an independent studio making bright, fast and fun games on Roblox — built for phones first, easy to start in seconds, and full of moments worth sharing with friends.</p>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <section id="games">
+      <h2>Our games</h2>
+      <div class="game">
+        <img class="shot" src="img/super-tornado.jpg" alt="Super Tornado: Storm Chasers gameplay" width="1280" height="720">
+        <div>
+          <h3><img src="img/super-tornado-icon.jpg" alt="">Super Tornado: Storm Chasers</h3>
+          <p>Chase giant tornadoes, launch probes right into the funnel and collect every storm kind in your Storm Journal. Unlock over 30 storm-chasing vehicles, survive hail and lightning, and hunt the rare golden tornado.</p>
+          <div class="tags"><span>Simulation</span><span>Storm chasing</span><span>9 languages</span><span>Phone friendly</span></div>
+          <a class="btn" href="https://www.roblox.com/games/139197035063387">Play on Roblox</a>
+          <a class="btn alt" href="https://www.youtube.com/@supertornadogame">Watch videos</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>How we make games</h2>
+      <div class="cards">
+        <div class="card"><b>Fun in 10 seconds</b><p>Every game starts with action right away — no long menus, no waiting.</p></div>
+        <div class="card"><b>Made for phones</b><p>Big buttons, smooth on everyday devices, readable on small screens.</p></div>
+        <div class="card"><b>Listening to players</b><p>We update often and build what our players ask for in game.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="cards">
+        <div class="card soon"><b>New game coming soon</b><p>We are working on our next Roblox experience. Follow us to see it first.</p></div>
+      </div>
+    </section>
+
+    <section id="follow">
+      <h2>Follow us</h2>
+      <a class="btn" href="https://www.youtube.com/@supertornadogame">YouTube</a>
+      <a class="btn" href="https://www.tiktok.com/@supertornadogame">TikTok</a>
+      <a class="btn alt" href="https://www.roblox.com/games/139197035063387">Roblox</a>
+    </section>
+  </div>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 Big Wow Games. Roblox is a trademark of Roblox Corporation. Big Wow Games is an independent developer and is not affiliated with or endorsed by Roblox Corporation.</p>
+      <a href="privacy.html">Privacy policy</a>
+    </div>
+  </footer>
+</body>
+</html>
